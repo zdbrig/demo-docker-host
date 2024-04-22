@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  remote-app:
+    image: node:latest
+    volumes:
+      - ./:/app
+    working_dir: /app
+    command: node remote.js
+   
